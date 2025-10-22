@@ -19,7 +19,7 @@
     "EmailTemplate": true,
     "ContactMessage": true,
     "Translation": true,
-    "Installer": true,
+    "Installer": false,
     "Language": true,
     "Contact": true,
     "Shop": true,

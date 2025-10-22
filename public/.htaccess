@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # Map admin vendor assets to generic assets/vendor
+    RewriteRule ^admin/assets/vendor/(.*)$ assets/vendor/$1 [L]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
